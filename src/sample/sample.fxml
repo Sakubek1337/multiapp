@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#bdf2f0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="450.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+      <Button fx:id="startButton" layoutX="380.0" layoutY="98.0" mnemonicParsing="false" onAction="#start" prefHeight="30.0" prefWidth="41.0" text="Start" />
+      <Label fx:id="score" alignment="CENTER" layoutY="38.0" prefHeight="30.0" prefWidth="800.0" text="Aim Trainer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="timeLabel" alignment="CENTER" layoutY="165.0" opacity="0.0" prefWidth="800.0" text="TIME:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="accLabel" alignment="CENTER" layoutY="195.0" opacity="0.0" prefWidth="800.0" text="ACCURACY: ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <MenuBar fx:id="menuBar" prefHeight="25.0" prefWidth="800.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Number of targets">
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="number15" mnemonicParsing="false" onAction="#setNumber15" selected="true" style="-fx-text-fill: black;" text="15" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="number25" mnemonicParsing="false" onAction="#setNumber25" style="-fx-text-fill: black;" text="25" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="number35" mnemonicParsing="false" onAction="#setNumber35" style="-fx-text-fill: black;" text="35" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Target size">
+               <items>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="size15" mnemonicParsing="false" onAction="#setSize15" style="-fx-text-fill: black;" text="Small" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="size25" mnemonicParsing="false" onAction="#setSize25" selected="true" style="-fx-text-fill: black;" text="Medium" />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <CheckBox fx:id="size35" mnemonicParsing="false" onAction="#setSize35" style="-fx-text-fill: black;" text="Large" />
+                     </graphic>
+                  </MenuItem>
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Pane layoutY="150.0" onMouseClicked="#click" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="aim" disable="true" layoutX="380.0" layoutY="79.0" mnemonicParsing="false" onAction="#got" opacity="0.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: red; -fx-background-radius: 100; -fx-border-radius: 100;" />
+         </children>
+      </Pane>
+   </children>
+</Pane>
