@@ -1,9 +1,7 @@
 package sample;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ProgressBar;
 import javafx.scene.control.TextField;
@@ -13,19 +11,15 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 
 import javax.swing.*;
-import java.math.BigDecimal;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Random;
 
-public class Controller2 implements Initializable {
+public class ControllerS implements Initializable {
 
     Image img = new Image("heart.png");
     @FXML
     private ProgressBar progBar;
-
-    @FXML
-    private Button progressButton;
 
     @FXML
     private TextField nameOne;
@@ -82,7 +76,7 @@ public class Controller2 implements Initializable {
     }
 
     @FXML
-    void progressing(ActionEvent event) throws InterruptedException {
+    void progressing() throws InterruptedException {
         submit();
 
     }
