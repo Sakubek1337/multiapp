@@ -1,7 +1,7 @@
 # Multi-App
 
-Made by: Mambetkadyrov Salamatbek
-         Abdiev Atai
-         Mataraimov Nuradil
+Made by: Mambetkadyrov Salamatbek <br >
+         Abdiev Atai <br>
+         Mataraimov Nuradil <br>
          
  
