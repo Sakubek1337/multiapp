@@ -10,6 +10,9 @@ It combined from: <br>
 ⭒ "Guess the Number" Game<br>
 ⭒ "Getter.io" Game<br>
 <br>
+Figma design: https://www.figma.com/community/file/973200601134544146<br>
+Trello: https://trello.com/b/ffiegE2r/multi-app<br>
+<br>
 Main menu:<br>
 <br>
 ![Screenshot1](https://github.com/Sakubek1337/multiapp/blob/main/screenshots/main.PNG)<br>
